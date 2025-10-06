@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Platform Data</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="/Assets/Google-removebg.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <h1 class="alan-sans">Coding Platform Data</h1>
+    <div class="container">
+        <div class="input-form">
+            <!-- Name : Value -->
+            <label for="platform" class="title">Choose a Coding Platform:</label>
+            <!-- name="selected-platform" -->
+            <select id="platform" class="input" required>
+                <option value="AtCoder" disabled>AtCoder (coming soon)</option>
+                <option value="Leetcode" selected>Leetcode</option>
+                <option value="Codechef" disabled>CodeChef (coming soon)</option>
+                <option value="Codeforces" disabled>Codeforces (coming soon)</option>
+                <option value="GfG" disabled>GeeksforGeeks (coming soon)</option>
+            </select>
+
+            <!-- name="username" -->
+            <input type="text" class="input" id="user-input" placeholder="&star; Enter Username" required>
+            <button class="button-confirm">Fetch Data...</button>
+        </div>
+        <div class="output oswald">
+            <!-- Output data will be shown here -->
+            <p><b>Total solved : </b><span id="total-solved">0</span></p>
+            <br>
+            <p>Easy solved : <span id="easy-solved">0</span></p>
+            <p>Medium solved : <span id="medium-solved">0</span></p>
+            <p>Hard solved : <span id="hard-solved">0</span></p>
+            <br>
+            <p><b>Last solved Question : </b><span id="last-solved">0</span></p>
+        </div>
+    </div>
+    <script src="/Leetcode/script.js"></script>
+</body>
+<footer style="background-color: rgb(199, 183, 236);">
+    <p>&copy; 2025 Aryan Anand&nbsp;</p>
+    <a href="https://github.com/aryan-anand-sde" target="_blank"><img src="/Assets/GitHub-removebg.png"
+            alt="GitHub"></a>
+    <a href="https://developers.google.com/profile/u/aryananand25" target="_blank"><img
+            src="/Assets/Google-removebg.png" alt="Google"></a>
+    <a href="https://www.linkedin.com/in/aryan-anand-sde/" target="_blank"><img src="/Assets/LinkedIn-removebg.png"
+            alt="LinkedIn"></a>
+</footer>
+
+</html>
