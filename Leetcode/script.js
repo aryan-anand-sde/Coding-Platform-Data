@@ -18,19 +18,27 @@ async function fetchData() {
 
   const totalPercentage = (data.totalSolved / data.totalQuestions) * 100;
   totalSolved.innerText =
-    data.totalSolved + ` (${totalPercentage.toFixed(3)}% solved)`;
+    data.totalSolved +
+    ` out of ${data.totalQuestions}` +
+    ` (${totalPercentage.toFixed(3)}% solved)`;
 
   const easyPercentage = (data.easySolved / data.totalEasy) * 100;
   easySolved.innerText =
-    data.easySolved + ` (${easyPercentage.toFixed(3)}% solved)`;
+    data.easySolved +
+    ` out of ${data.totalEasy}` +
+    ` (${easyPercentage.toFixed(3)}% solved)`;
 
   const mediumPercentage = (data.mediumSolved / data.totalMedium) * 100;
   mediumSolved.innerText =
-    data.mediumSolved + ` (${mediumPercentage.toFixed(3)}% solved)`;
+    data.mediumSolved +
+    ` out of ${data.totalMedium}` +
+    ` (${mediumPercentage.toFixed(3)}% solved)`;
 
   const hardPercentage = (data.hardSolved / data.totalHard) * 100;
   hardSolved.innerText =
-    data.hardSolved + ` (${hardPercentage.toFixed(3)}% solved)`;
+    data.hardSolved +
+    ` out of ${data.totalHard}` +
+    ` (${hardPercentage.toFixed(3)}% solved)`;
 
   lastSolved.innerText =
     data.recentSubmissions[0].title +
