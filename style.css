@@ -35,6 +35,10 @@ body {
   display: none;
   padding-top: 25px;
 }
+.error {
+  display: none;
+  padding-top: 25px;
+}
 
 .alan-sans {
   font-family: "Alan Sans", sans-serif;
