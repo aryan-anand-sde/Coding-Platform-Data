@@ -6,11 +6,6 @@
 
 ---
 
-> Check it out  
-> [Live Server](https://coding-data-aryan.tech/)
-
----
-
 ---
 
 ![Home Page](/Assets/Home%20Page.png)
